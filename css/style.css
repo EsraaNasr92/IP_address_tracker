@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body{
+  font-family: 'Rubik', sans-serif;
+  margin: 0 auto;
+/*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
+}
+/*.container{
+  width: 100%;
+
+}
+*/
+.header{
+  background: url('../images/pattern-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px 10px 160px 10px;
+  text-align: center;
+  width: 100%;
+}
+
+h1{
+  color: #fff;
+  font-weight: normal;
+}
+
+input[type="text"]{
+  padding: 10px;
+  width: 39%;
+  border-radius: 9px;
+  border: none;
+  color: #000;
+  position: relative;
+}
+ .search{
+   position: absolute;
+   background: #000;
+  /* top: 30%; */
+   right: 28%;
+   padding: 10px;
+   border: none;
+   border-top-right-radius: 9px;
+   border-bottom-right-radius: 9px;
+ }
+
+.search-result{
+  position: absolute;
+  width: 50%;
+  top: 36%;
+  left: 25%;
+  text-align: center;
+  background: #fff;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.search-result p{
+  text-transform: uppercase;
+}
+.search-result h2{
+  font-weight: normal;
+  font-size: 17px;
+}
+.search-result > div{
+  width: 25%;
+}
+/*.map-result{
+  overflow: hidden;
+  padding-bottom: 50%;
+  position:relative;
+  height: 0;
+}*/
+
+.map-result iframe{
+  /*left: 0;*/
+  /*top: 100%; */
+  /*height: 100%;*/
+  width: 100%;
+  /*position: absolute;*/
+}
+
+@media screen and (max-width: 765px){
+  .search-result{
+    flex-direction: column;
+    text-align: center;
+  }
+  .search-result > div{
+    width: 100%;
+  }
+  input[type="text"]{
+    width: 80%;
+  }
+  .search{
+    right: 4%;
+  }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
